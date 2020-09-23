@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#E1D358">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/key" />
+
+        <TextView
+            android:id="@+id/TextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:text="LOGIN"
+            android:textSize="20dip"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+        <View
+            android:id="@+id/View1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/user"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:hint="   Username"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:drawableLeft="@drawable/username"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:hint="   Password"
+            android:drawableLeft="@drawable/password"
+            android:password="true"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:text="Login"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:onClick="klikLogin"
+            android:background="#4BB37D"/>
+
+        <TextView
+            android:id="@+id/bacaan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_login"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:text="Belum Punya Akun?"/>
+
+        <TextView
+            android:id="@+id/daftar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Daftar"
+            android:onClick="buatakun"
+            android:textColor="#2196F3"/>
+    </LinearLayout>
+
+</RelativeLayout>
